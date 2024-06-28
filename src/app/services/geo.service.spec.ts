@@ -1,14 +1,17 @@
 import { TestBed } from '@angular/core/testing';
 
 import { GeoService } from './geo.service';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 describe('GeoService', () => {
   let service: GeoService;
   let http: HttpClient;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({
+      imports: [HttpClientModule]
+
+    });
     service = TestBed.inject(GeoService);
     http = TestBed.inject(HttpClient);
   });
