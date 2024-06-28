@@ -1,7 +1,9 @@
 import { TestBed } from '@angular/core/testing';
 
 import { ContatoService } from './contato.service';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 describe('ContatoService', () => {
   
@@ -9,7 +11,12 @@ describe('ContatoService', () => {
   let http: HttpClient;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({
+      imports : [
+        HttpClientModule
+      ]
+
+    });
     service = TestBed.inject(ContatoService);
     http = TestBed.inject(HttpClient);    
   });
