@@ -1,6 +1,6 @@
 {
-  "name": "teste-mobit-front",
-  "version": "1.0.0",
+  "name": "crud-cicd",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
