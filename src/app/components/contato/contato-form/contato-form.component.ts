@@ -104,6 +104,19 @@ export class ContatoFormComponent extends View implements OnInit {
 
   }
 
+  montarPayload(contato){
+
+    let payload = {
+      "cpf": contato.cpf,
+      "name": contato.nome,
+      "last_name": contato.sobrenome,
+      "email": contato.email
+    }
+
+    return payload;
+
+  }
+
 
   /**
    * ```
@@ -113,9 +126,11 @@ export class ContatoFormComponent extends View implements OnInit {
    */
   inserir() {
     this.contato.cpf =  this.formatarCpfSomenteDigitos(this.contato.cpf);               
-    this.exibirLoading('Salvando Contato');
+    this.exibirLoading('Salvando Contato');    
+    let payload = this.montarPayload(this.contato);
+    console.log(payload);
     this.subscription = this.contatoService
-      .save(this.contato)
+      .save(payload)
       .subscribe((_) => {
         this.exibirSucesso();
         this.limpar();

@@ -11,7 +11,7 @@ import { Params } from '@angular/router';
   providedIn: 'root',
 })
 export class ContatoService {
-  URL_BASE = `${environment.url}/contatos`;
+  URL_BASE = `${environment.url}/users`;
 
   constructor(private http: HttpClient) {}
 
@@ -84,7 +84,7 @@ export class ContatoService {
   public findDezContatosOrderByNome(): Observable<any> {
     let endpoint = `${this.URL_BASE}`;
 
-    return this.http.get(`${endpoint}/`);
+    return this.http.get(`${endpoint}`);
   }
 
 
