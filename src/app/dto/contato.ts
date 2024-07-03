@@ -1,9 +1,9 @@
 import { Endereco } from "./endereco";
 
 export interface Contato {
-  codigo?: number;
-  nome?: string;
-  sobrenome?: string;
+  id?: number;
+  name?: string;
+  last_name?: string;
   cpf?: string;
   email?: string;
   enderecos?: Endereco[]
