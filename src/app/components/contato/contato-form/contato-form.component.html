@@ -3,32 +3,32 @@
     fxLayoutAlign="start stretch"
     #contatoForm="ngForm"
     (ngSubmit)="onSubmit()"
-    id="form_contato"
+    id="form_contato"    
   >
   
     <div layout="row" layout-align="center center" style="margin: 5px">
-      <button class="btn btn-primary btn-voltar" id="voltar" type="button" mat-button routerLink="/contato" >Voltar</button>
+      <button class="mat-raised-button" id="voltar" type="button" mat-button routerLink="/contato" >Voltar</button>
     </div>
-    <div align="center" layout="row" layout-align="center center">
+    <div align="center"  layout="row" layout-align="center center" > 
       <mat-card
-        class="info-card mat-elevation-z8"
-       
-        style="margin-top: 40px; max-width: 800px"
+        class="info-card mat-elevation-z8"       
+        style="margin-top: 40px; max-width: 800px; background-color: aliceblue;"
+        style="background-color: aliceblue;"
       >
         <mat-card-title> Contato </mat-card-title>
         <mat-card-subtitle> Cadastro</mat-card-subtitle>
 
-        <mat-tab-group mat-align-tabs="center">
+        <mat-tab-group mat-align-tabs="left">
           <mat-tab label="Dados Contato">
             <mat-card-content fxLayout="column" fxLayoutAlign="left">
               
-                <div fxFlex="100" fxLayoutAlign="start">
+                <div fxFlex="100" fxLayoutAlign="left" *ngIf="false">
                   <h4>Dados Pessoais:</h4>
                 </div>
                 <div
-                  fxFlex="100"
+                  fxFlex="50"
                   fxLayout="row"
-                  fxLayoutAlign="space-between  start"
+                  fxLayoutAlign="space-between  left"
                 >
                   <mat-form-field >
                     
@@ -176,3 +176,5 @@
       </mat-card>    
   </div>
 </form>
+
+

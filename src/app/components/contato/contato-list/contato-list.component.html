@@ -1,9 +1,9 @@
 
 <mat-card style="max-height: max-content" class="mat-card-style">
-  <table mat-table [dataSource]="pager.content" style="width: 100%">
+  <mat-table mat-table class="mat-elevation-z8 demo-table " [dataSource]="pager.content" style="width: 100%;"  >
     <!--- Note that these columns can be defined in any order.
           The actual rendered columns are set as a property on the row definition" -->
-
+ 
     <!-- Position Column -->
     <ng-container matColumnDef="codigo">
       <th mat-header-cell *matHeaderCellDef>Código</th>
@@ -44,8 +44,9 @@
     </div>
     
 
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
-  </table>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    
+  </mat-table>
   
 </mat-card>
