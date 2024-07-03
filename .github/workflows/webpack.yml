@@ -3,7 +3,7 @@ name: workflow name
 on:
   push:
     branches:
-      - 'main'
+      - 'develop'
 
 jobs:
   build:
@@ -42,4 +42,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: docs
+          FOLDER: .
