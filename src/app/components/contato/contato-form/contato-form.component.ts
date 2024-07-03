@@ -46,14 +46,14 @@ export class ContatoFormComponent extends View implements OnInit {
     this.contato = this.contatoService.novo();    
     this.route.params.subscribe((parametros: Params) => {
       const codigo = parametros['id'];
-
+      console.log('codigo: ' + codigo);
 
       if (codigo) {
         this.contatoService.mapParams(parametros);
 
         this.contatoService.findById(codigo).subscribe(
           (contato) => {
-            this.contato = contato;
+            this.contato = contato.data;
 
             console.log(this.contato);
           },
@@ -70,7 +70,7 @@ export class ContatoFormComponent extends View implements OnInit {
     
     if (
       this.contato != undefined &&
-      (this.contato.codigo == undefined)
+      (this.contato.id == undefined)
     ) {
       this.inserir();
     }else{
@@ -90,7 +90,7 @@ export class ContatoFormComponent extends View implements OnInit {
       this.contato.cpf =  this.formatarCpfSomenteDigitos(this.contato.cpf);    
       this.exibirLoading('Atualizando Contato');
       this.subscription = this.contatoService
-      .update(this.contato.codigo, this.contato)
+      .update(this.contato.id, this.contato)
       .subscribe(_ => {
         this.fecharLoading();
         alert('Atualização realizada com sucesso!');
@@ -104,19 +104,7 @@ export class ContatoFormComponent extends View implements OnInit {
 
   }
 
-  montarPayload(contato){
-
-    let payload = {
-      "cpf": contato.cpf,
-      "name": contato.nome,
-      "last_name": contato.sobrenome,
-      "email": contato.email
-    }
-
-    return payload;
-
-  }
-
+  
 
   /**
    * ```
@@ -127,7 +115,7 @@ export class ContatoFormComponent extends View implements OnInit {
   inserir() {
     this.contato.cpf =  this.formatarCpfSomenteDigitos(this.contato.cpf);               
     this.exibirLoading('Salvando Contato');    
-    let payload = this.montarPayload(this.contato);
+    let payload = this.montarPayload(this.contato);    
     console.log(payload);
     this.subscription = this.contatoService
       .save(payload)
@@ -144,6 +132,20 @@ export class ContatoFormComponent extends View implements OnInit {
         this.fecharLoading();
       }); 
   }
+
+  montarPayload(contato){
+
+    let payload = {
+      "cpf": contato.cpf,
+      "name": contato.name,
+      "last_name": contato.last_name,
+      "email": contato.email
+    }
+
+    return payload;
+
+  }
+
 
   ngOnDestroy(): void {
     if (this.subscription) {

@@ -17,9 +17,9 @@ export class ContatoService {
 
   public novo(): Contato {
     let contato: Contato = {
-      codigo: undefined,
-      nome: '',
-      sobrenome: '',
+      id: undefined,
+      name: '',
+      last_name: '',
       cpf: '',
       email: '',
       enderecos: [] = []
@@ -40,9 +40,9 @@ export class ContatoService {
    */
   public mapParams(parametros: Params): Contato {
     let contato: Contato = {
-      codigo: parametros['codigo'],
-      nome: parametros['nome'],
-      sobrenome: parametros['sobrenome'],
+      id: parametros['codigo'],
+      name: parametros['nome'],
+      last_name: parametros['sobrenome'],
       cpf: parametros['cpf'],
       email: parametros['email'],
     };
