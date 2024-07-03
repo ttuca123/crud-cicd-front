@@ -33,7 +33,7 @@ constructor(
 
   ngOnInit() {
     this.novoEndereco(); 
-    if(this.contato.codigo!=undefined){
+    if(this.contato.id!=undefined){
       alert('contato existe');
     }
     

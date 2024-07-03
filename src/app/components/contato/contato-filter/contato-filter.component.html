@@ -1,5 +1,5 @@
 
-<mat-card *ngIf="false">
+<!--<mat-card *ngIf="false">
   <mat-card-content>   
    
     <form
@@ -58,6 +58,15 @@
       </div>
     </form>
   </mat-card-content>
+</mat-card>
+!-->
+
+<mat-card>
+<mat-card-content>
+  
+    <button id="btn_novo" type="button"  class="btn btn-success btn-novo" mat-raised-button routerLink="contato/cadastro"
+              ngbTooltip="Novo Contato" style="margin:8px;">{{lblBtnNovo}}</button>  
+ </mat-card-content>
 </mat-card>
 
 <app-contato-list  

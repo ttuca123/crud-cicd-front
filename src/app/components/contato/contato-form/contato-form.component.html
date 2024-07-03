@@ -43,7 +43,7 @@
                       class="form-control"
                       value=""
                       placeholder="Código"
-                      [(ngModel)]="contato.codigo"
+                      [(ngModel)]="contato.id"
                       #codigoField="ngModel"
                     />
                   </mat-form-field>
@@ -63,7 +63,7 @@
                       class="form-control"
                       value=""
                       placeholder="Nome"
-                      [(ngModel)]="contato.nome"
+                      [(ngModel)]="contato.name"
                       #nomeField="ngModel"
                     />
                     <mat-error *ngIf="nomeField.invalid">
@@ -88,7 +88,7 @@
                       class="form-control"
                       value=""
                       placeholder="SobreNome"
-                      [(ngModel)]="contato.sobrenome"
+                      [(ngModel)]="contato.last_name"
                       #sobrenomeField="ngModel"
                     />
                     <mat-error *ngIf="sobrenomeField.invalid">
