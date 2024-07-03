@@ -148,11 +148,13 @@
               
             </mat-card-content>
           </mat-tab>
-          <mat-tab label="Dados Endereço">
-            <mat-card-content>              
-              <app-contato-endereco-form [contato]="contato"></app-contato-endereco-form>
-            </mat-card-content>
-          </mat-tab>
+          <div *ngIf="false">
+            <mat-tab label="Dados Endereço">
+              <mat-card-content>              
+                <app-contato-endereco-form [contato]="contato"></app-contato-endereco-form>
+              </mat-card-content>
+            </mat-tab>
+          </div>
 
         </mat-tab-group>
         <button

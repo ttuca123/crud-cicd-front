@@ -30,7 +30,8 @@ const maskConfig: Partial<IConfig> = {
     BrowserAnimationsModule,
     MaterialModule,   
   ],
-  providers: [    
+  providers: [ 
+      
   ],
   bootstrap: [AppComponent],
 })

@@ -47,11 +47,11 @@ export class ContatoFilterComponent extends View implements OnInit, OnDestroy {
   }
 
   public buscarDezContatos() {
-    this.exibirLoading('Buscando Dez Contatos');
+    this.exibirLoading('Buscando Contatos');
     this.subscription = this.contatoService.findDezContatosOrderByNome()
     .subscribe((payload: any)=> {
       this.fecharLoading();      
-      this.pager.content = payload;      
+      this.pager.content = payload.data;      
 
     }, (err: any) => {
         this.fecharLoading();      
