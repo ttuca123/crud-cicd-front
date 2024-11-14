@@ -121,7 +121,7 @@
             "zIndex": 1,
             "data": {
               "type": "tm.Process",
-              "name": "Process",
+              "name": "Processo",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -417,8 +417,8 @@
             },
             "vertices": [
               {
-                "x": 340,
-                "y": -350
+                "x": 410,
+                "y": -390
               }
             ]
           }
