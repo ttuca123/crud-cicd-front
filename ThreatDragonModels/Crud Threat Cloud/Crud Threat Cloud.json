@@ -1,0 +1,27 @@
+{
+  "version": "2.3.0",
+  "summary": {
+    "title": "Crud Threat Cloud",
+    "owner": "Artur Cavalcante - 2417046",
+    "description": "Sistema é um crud simples que simula uma interface de login vulnerável, utilizando amazon s3 e amazon cognito persistindo os dados no banco de dados relacional.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Diagrama Crud Threat Cloud",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.3.0",
+        "cells": [],
+        "description": "é o diagrama que representa a estrutura e arquitetura da aplicação"
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "Felipe Neres - 2327959",
+    "threatTop": 0
+  }
+}
