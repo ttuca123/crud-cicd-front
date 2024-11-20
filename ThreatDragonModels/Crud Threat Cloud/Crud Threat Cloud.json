@@ -318,8 +318,8 @@
           },
           {
             "position": {
-              "x": 220,
-              "y": -430
+              "x": 290,
+              "y": -490
             },
             "size": {
               "width": 112.5,
@@ -327,7 +327,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Browser"
+                "text": "Front End"
               },
               "body": {
                 "stroke": "red",
@@ -423,7 +423,7 @@
             "id": "f72ef4a6-ffc1-4284-90e0-cb1bf0558214",
             "data": {
               "type": "tm.Actor",
-              "name": "Browser",
+              "name": "Front End",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1190,14 +1190,7 @@
                 "denialOfService": 0
               }
             },
-            "zIndex": 13,
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            }
+            "zIndex": 13
           }
         ],
         "description": "é o diagrama que representa a estrutura e arquitetura da aplicação"
