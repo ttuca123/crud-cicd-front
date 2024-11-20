@@ -711,160 +711,6 @@
           },
           {
             "position": {
-              "x": 460,
-              "y": -160
-            },
-            "size": {
-              "width": 60,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "BackEnd - Java\n\n"
-              },
-              "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "zIndex": 11,
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "e9c8f7cc-8aef-4eea-8203-49b1fe1a4935"
-                },
-                {
-                  "group": "right",
-                  "id": "afb9057e-cff3-434d-a461-54a52792166b"
-                },
-                {
-                  "group": "bottom",
-                  "id": "7e1c5e3a-4370-40f4-a3e9-e1bb62eaa260"
-                },
-                {
-                  "group": "left",
-                  "id": "ff89821c-8bf3-46bf-be33-02e03d50e38a"
-                }
-              ]
-            },
-            "id": "50f3a28d-e5fe-4e16-a6a5-8d21dd7e0dff",
-            "data": {
-              "type": "tm.Process",
-              "name": "BackEnd - Java\n\n",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": [
-                {
-                  "id": "d827b444-258c-4c62-ab57-db59a565c534",
-                  "title": "Ataque DDOS",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Spoofing",
-                  "description": "CAPEC-125: Flooding;\nCWE-400: Uncontrolled Resource Consumption;",
-                  "mitigation": "Limitação de recursos no sistema;\nMonitoramento e Detecção;",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 5,
-                  "score": ""
-                },
-                {
-                  "id": "d827b444-258c-4c62-ab57-db59a565c534",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 5,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "spoofing": 1,
-                "tampering": 1,
-                "repudiation": 0,
-                "informationDisclosure": 0,
-                "denialOfService": 0,
-                "elevationOfPrivilege": 0
-              }
-            }
-          },
-          {
-            "position": {
               "x": 1060,
               "y": -578
             },
@@ -889,6 +735,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1018,8 +865,7 @@
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
-            },
-            "zIndex": 12
+            }
           },
           {
             "position": {
@@ -1047,6 +893,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -1189,8 +1036,7 @@
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
-            },
-            "zIndex": 13
+            }
           }
         ],
         "description": "é o diagrama que representa a estrutura e arquitetura da aplicação"
