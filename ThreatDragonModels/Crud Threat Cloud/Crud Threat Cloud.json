@@ -19,7 +19,7 @@
         "cells": [
           {
             "position": {
-              "x": 510,
+              "x": 500,
               "y": -430
             },
             "size": {
@@ -160,8 +160,8 @@
           },
           {
             "position": {
-              "x": 1060,
-              "y": -430
+              "x": 910,
+              "y": -250
             },
             "size": {
               "width": 120,
@@ -314,13 +314,6 @@
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -503,51 +496,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "interface",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "interface"
-            ],
-            "id": "db5d8bcd-0503-4d72-b3e6-142013e881da",
-            "source": {
-              "cell": "1d51f58d-6ef4-42a3-bba0-08f0d4ab6c4f",
-              "port": "afb9057e-cff3-434d-a461-54a52792166b"
-            },
-            "target": {
-              "cell": "50f3a28d-e5fe-4e16-a6a5-8d21dd7e0dff",
-              "port": "ff89821c-8bf3-46bf-be33-02e03d50e38a"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Http",
               "description": "",
               "outOfScope": false,
@@ -591,7 +539,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "interface",
+              "name": "Log",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -603,20 +551,168 @@
               "threats": []
             },
             "labels": [
-              "interface"
+              "Log"
             ],
-            "id": "783eb04b-009a-4c11-b23d-dd6674b005f3",
+            "id": "e77a46a2-c1da-464d-a66a-3a43c508250e",
             "source": {
-              "cell": "50f3a28d-e5fe-4e16-a6a5-8d21dd7e0dff"
+              "cell": "1d51f58d-6ef4-42a3-bba0-08f0d4ab6c4f"
+            },
+            "target": {
+              "cell": "eba58c64-371e-4892-8f77-7970a97d0cd8"
+            },
+            "vertices": [
+              {
+                "x": 810,
+                "y": -470
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "6c694b5a-32c1-43f6-ab9a-1e7b8a3da5a3",
+            "source": {
+              "cell": "1d51f58d-6ef4-42a3-bba0-08f0d4ab6c4f"
             },
             "target": {
               "cell": "f870d86e-8026-46a0-bca9-b906707492b7"
+            },
+            "vertices": [
+              {
+                "x": 570,
+                "y": -220
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Exist True",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Exist True"
+            ],
+            "id": "1eaf24d8-6700-4799-87b5-e72030978c26",
+            "source": {
+              "cell": "f870d86e-8026-46a0-bca9-b906707492b7"
+            },
+            "target": {
+              "cell": "860d834b-027d-4616-b8ae-ab78c46dbf17"
             }
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "JWT",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "JWT"
+            ],
+            "id": "a8684c69-0d24-4eaf-b48a-ae4abe1127f3",
+            "source": {
+              "cell": "860d834b-027d-4616-b8ae-ab78c46dbf17"
+            },
+            "target": {
+              "cell": "1d51f58d-6ef4-42a3-bba0-08f0d4ab6c4f"
+            },
+            "vertices": [
+              {
+                "x": 730,
+                "y": -372.5
+              },
+              {
+                "x": 660,
+                "y": -380
+              }
+            ]
+          },
+          {
             "position": {
-              "x": 750,
-              "y": -430
+              "x": 460,
+              "y": -160
             },
             "size": {
               "width": 60,
@@ -766,6 +862,342 @@
                 "elevationOfPrivilege": 0
               }
             }
+          },
+          {
+            "position": {
+              "x": 1060,
+              "y": -578
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Amazon S3"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "0c366aaa-5581-478b-8652-baff4181820f"
+                },
+                {
+                  "group": "right",
+                  "id": "9220a9fa-e8a2-4214-b78e-79b413ea728a"
+                },
+                {
+                  "group": "bottom",
+                  "id": "86dc776a-d0b8-4abf-8569-43889bce13f4"
+                },
+                {
+                  "group": "left",
+                  "id": "c904f13b-b020-43b6-9da9-9b39ee575048"
+                }
+              ]
+            },
+            "id": "eba58c64-371e-4892-8f77-7970a97d0cd8",
+            "data": {
+              "type": "tm.Store",
+              "name": "Amazon S3",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "d827b444-258c-4c62-ab57-db59a565c534",
+                  "title": "SQL Injection",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "CWE-89: Improper Neutralization of Special Elements used in an SQL Command\nvnw-rpmn-rhj;\nCAPEC 66: sqlInjection",
+                  "mitigation": "Atualização e Patches\nDescrição: Mantenha todos os sistemas, frameworks e bibliotecas atualizados. Muitos ataques de SQL Injection exploram vulnerabilidades conhecidas em sistemas desatualizados.\nUso de Consultas Preparadas (Prepared Statements)\nDescrição: Use consultas parametrizadas em vez de concatenar strings diretamente no SQL. Consultas preparadas separam os dados fornecidos pelo usuário da lógica do SQL, evitando a execução de código injetado.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                },
+                {
+                  "id": "d827b444-258c-4c62-ab57-db59a565c534",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "zIndex": 12
+          },
+          {
+            "position": {
+              "x": 900,
+              "y": -400
+            },
+            "size": {
+              "width": 110,
+              "height": 55
+            },
+            "attrs": {
+              "text": {
+                "text": "Amazon Cognito"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "0c366aaa-5581-478b-8652-baff4181820f"
+                },
+                {
+                  "group": "right",
+                  "id": "9220a9fa-e8a2-4214-b78e-79b413ea728a"
+                },
+                {
+                  "group": "bottom",
+                  "id": "86dc776a-d0b8-4abf-8569-43889bce13f4"
+                },
+                {
+                  "group": "left",
+                  "id": "c904f13b-b020-43b6-9da9-9b39ee575048"
+                }
+              ]
+            },
+            "id": "860d834b-027d-4616-b8ae-ab78c46dbf17",
+            "data": {
+              "type": "tm.Store",
+              "name": "Amazon Cognito",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "d827b444-258c-4c62-ab57-db59a565c534",
+                  "title": "SQL Injection",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "CWE-89: Improper Neutralization of Special Elements used in an SQL Command\nvnw-rpmn-rhj;\nCAPEC 66: sqlInjection",
+                  "mitigation": "Atualização e Patches\nDescrição: Mantenha todos os sistemas, frameworks e bibliotecas atualizados. Muitos ataques de SQL Injection exploram vulnerabilidades conhecidas em sistemas desatualizados.\nUso de Consultas Preparadas (Prepared Statements)\nDescrição: Use consultas parametrizadas em vez de concatenar strings diretamente no SQL. Consultas preparadas separam os dados fornecidos pelo usuário da lógica do SQL, evitando a execução de código injetado.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                },
+                {
+                  "id": "d827b444-258c-4c62-ab57-db59a565c534",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                },
+                {
+                  "id": "05ead0f7-21c1-4223-8b27-b1eddfc3e24c",
+                  "title": "Alteração de JWT",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "CAPEC-133: Forced Browsing\nCAPEC-129: Brute Force Attack\nCAPEC-116: Man-in-the-Middle Attack",
+                  "mitigation": "1 - Usar Https;\n2 Usar uma chave secreta forte e trocá-la periodicamente;",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": "8"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 3,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "zIndex": 13,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
           }
         ],
         "description": "é o diagrama que representa a estrutura e arquitetura da aplicação"
@@ -773,6 +1205,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Felipe Neres - 2327959",
-    "threatTop": 8
+    "threatTop": 9
   }
 }
