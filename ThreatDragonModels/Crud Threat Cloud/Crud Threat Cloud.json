@@ -169,7 +169,7 @@
             },
             "attrs": {
               "text": {
-                "text": "SGBD - Postgres"
+                "text": "Database Users"
               },
               "topLine": {
                 "stroke": "red",
@@ -270,7 +270,7 @@
             "id": "f870d86e-8026-46a0-bca9-b906707492b7",
             "data": {
               "type": "tm.Store",
-              "name": "SGBD - Postgres",
+              "name": "Database Users",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -634,6 +634,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -764,8 +765,7 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
-            },
-            "zIndex": 11
+            }
           }
         ],
         "description": "é o diagrama que representa a estrutura e arquitetura da aplicação"
